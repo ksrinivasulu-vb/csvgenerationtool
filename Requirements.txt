@@ -1,0 +1,24 @@
+Hierarchy: Create Entity - Under Entity users 
+ 
+1.Import DataSet
+Batch ID Auto generate - CSV Import - Data Mapping Page (Map relevant Columns of csv for relevant fields - Option to concatenate multiple columns & Static Text) - 
+While processing: Deduplication of Data Set, validation of image links -  
+For audit trail & keeping in mind future requirements also insert Created Date, Batch ID, Batch name , User ID, Entity ID 
+ 
+
+2.Manage Dataset - List of Batch ID's with Created Date & batch Name & Number of Files in the Data set Option to soft delete Dataset.
+
+
+3.Manage Data Masters: For each DB column name, user can create some masters here and make sure all the data imported are matching this. 
+For ex: Category master: Mug, T-Shirt. For every DB Column we can create a master here or configure this as Dynamic. 
+
+4.Export Dataset Request
+->*Select desired formate: Flipkart, amazon India, amazon Canada 
+->*Select Category: <Multi Select> Mugs, Tshirts 
+->*Select Data Batch ID's: Multi Select: (While selecting it should show "Batch ID - Batch Name - Created Date" for better experience
+->Mention How many records you want in each CSV : <A numeric Value> 
+
+--------Generate a Export Request ID and display it on the scree to download the same in Downloads section -----
+5.Download Section:
+A list view of all requests with Status 
+Sno - Request Date & Time - Export Request ID - Status - Download Link 
